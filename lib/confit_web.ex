@@ -22,7 +22,6 @@ defmodule ConfitWeb do
       use Phoenix.Controller, namespace: ConfitWeb
       import Plug.Conn
       import ConfitWeb.Router.Helpers
-      import ConfitWeb.Gettext
     end
   end
 
@@ -35,8 +34,6 @@ defmodule ConfitWeb do
       import Phoenix.Controller, only: [get_flash: 2, view_module: 1]
 
       import ConfitWeb.Router.Helpers
-      import ConfitWeb.ErrorHelpers
-      import ConfitWeb.Gettext
     end
   end
 
@@ -51,7 +48,6 @@ defmodule ConfitWeb do
   def channel do
     quote do
       use Phoenix.Channel
-      import ConfitWeb.Gettext
     end
   end
 

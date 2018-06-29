@@ -3,9 +3,11 @@ defmodule ConfitWeb.Router do
 
   pipeline :api do
     plug :accepts, ["json"]
+    plug ConfitWeb.DuckPlug
   end
 
-  scope "/api", ConfitWeb do
+  scope "/", ConfitWeb do
     pipe_through :api
+    get "/", PingController, :index
   end
 end
