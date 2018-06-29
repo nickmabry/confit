@@ -34,7 +34,8 @@ defmodule Confit.Mixfile do
     [
       {:phoenix, "~> 1.3.3"},
       {:phoenix_pubsub, "~> 1.0"},
-      {:cowboy, "~> 1.0"}
+      {:cowboy, "~> 1.0"},
+      {:mox, "~> 0.3.2"}
     ]
   end
 end
